@@ -5,69 +5,13 @@
   color: #000000;
 }
 
-%desktop-button {
-  display: inline-block;
+%button {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(24 / 18);
   border: none;
   border-radius: 38px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  min-width: 280px;
-  background-color: $accent-color;
-  color: $primary-white-color;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 0.86;
   cursor: pointer;
-  &:hover {
-    background-color: $hover-color;
-  }
-  &:focus {
-    background-color: $focus-color;
-    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
-  }
-}
-
-%mobile-primary-button {
-  display: inline-block;
-  border: none;
-  border-radius: 38px;
-  padding: 10px 35px;
-  background-color: $accent-color;
-  color: $primary-white-color;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  cursor: pointer;
-  &:hover {
-    background-color: $hover-color;
-  }
-  &:focus {
-    background-color: $focus-color;
-    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
-  }
-}
-
-%mobile-secondary-button {
-  display: inline-block;
-  border: 0;
-  border-radius: 38px;
-  padding: 8px 39.5px;
-  background-color: $accent-color;
-  color: $primary-white-color;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  cursor: pointer;
-  &:hover {
-    background-color: $hover-color;
-  }
-  &:focus {
-    background-color: $focus-color;
-    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
-  }
 }
