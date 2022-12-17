@@ -7,7 +7,7 @@ a {
 }
 
 .header {
-padding-top: 16px;
+    padding-top: 16px;
 }
 
 .header__wrapper {
@@ -60,7 +60,6 @@ padding-top: 16px;
     .mobile-menu-button__icon {
         display: block;
     }
-
 }
 
 @media screen and (min-width: $tablet) {
@@ -71,7 +70,7 @@ padding-top: 16px;
 
     .header {
         padding-top: 24px;
-        }
+    }
 
     .header__wrapper {
         display: flex;
@@ -139,8 +138,12 @@ padding-top: 16px;
         padding-bottom: 21px;
     }
 
+    .header__icon {
+        padding-top: 12px;
+        padding-bottom: 21px;
+    }
+
     .telephone {
-        // margin-left: 306px;
         width: 28px;
         height: 28px;
     }
