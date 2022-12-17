@@ -40,5 +40,9 @@
 <symbol id="burger" viewBox="0 0 32 32">
 <path d="M4 5.333h24v2.667h-24v-2.667zM12 14.667h16v2.667h-16v-2.667zM4 24h24v2.667h-24v-2.667z"></path>
 </symbol>
+<symbol id="close-icon" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8 8l16 16"></path>
+</symbol>
 </defs>
 </svg>
