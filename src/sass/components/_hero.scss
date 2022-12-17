@@ -1,0 +1,60 @@
+.hero {
+  position: relative;
+  text-align: center;
+  padding-top: 45px;
+  height: 455px;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: $primary-text-color;
+  margin-left: 11px;
+}
+
+.hero__title {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: calc(63 / 52);
+  color: $primary-text-color;
+
+  align-self: center;
+}
+.hero__img {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  @media screen and(min-width: $tablet) {
+    width: 390px;
+    height: 636px;
+  }
+}
+
+.hero__img img {
+}
+
+.hero__btn {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.hero__svg {
+  display: block;
+  width: 64px;
+  height: 76px;
+}
