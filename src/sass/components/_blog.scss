@@ -1,6 +1,6 @@
 .blog {
-    position: absolute;
-    outline: 1px solid orange;
+  position: absolute;
+  outline: 1px solid orange;
 }
 
 .blog__title {
@@ -33,13 +33,21 @@
 }
 
 .blog__list {
-    display: flex;
-    align-items: center;
-    margin-bottom: 28px;  
-    gap: 8px; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 8px;
 
-    position: relative;
-    left: -47px;
+  position: relative;
+  left: -47px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 44px;
+  }
 }
 
 .subscribe {
@@ -48,11 +56,21 @@
   align-items: center;
 }
 .subscribe__strong {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+
+    font-size: 32px;
+    line-height: calc(39 / 32);
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 48px;
+  }
 }
 
 .subscribe__button {
@@ -61,5 +79,12 @@
 
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: calc(24 / 18);
+
+  @media screen and (min-width:$tablet) {
+    padding: 20 70;
+
+    font-size: 28px;
+    line-height: calc(24 / 28);
+  }
 }
