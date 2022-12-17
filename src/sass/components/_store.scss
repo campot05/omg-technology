@@ -1,4 +1,94 @@
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<PORTFOLIO>>>>>>>>>>>>>>
+.store {
+  padding-bottom: 60px;
+  @media screen and(min-width: $tablet) {
+    padding-bottom: 100px;
+  }
+}
+
+.store__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  padding-bottom: 80px;
+  
+  @media screen and(min-width: $mobile) {
+    width: 480px;
+    padding-bottom: 32px;
+  }
+  @media screen and(min-width: $tablet) {
+    padding: 0 24px;
+    width: 768px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: 1280px;
+  }
+}
+.store__list {
+  list-style: none;
+  
+  @media screen and(min-width: $mobile) {
+    max-width: 480px;
+    width: calc((100% - 32px) / 2);
+    gap: 16px;
+    // flex-wrap: wrap;
+    display: flex;
+    
+  }
+}
+// .store__item {
+// }
+.store__link {
+  width: 136px;
+  height: 155px;
+  
+}
+.store__wrap {
+  position: relative;
+  overflow: hidden;
+  
+}
+.store__title-wrap {
+  @media screen and(min-width: $mobile) {
+    padding-bottom: 16px;
+      // border: 1px solid #eeeeee;
+      // border-top: 0;
+      // display: block;
+}
+  }
+.store__pic-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $primary-text-color;
+
+  @media screen and(min-width: $mobile) {
+    
+  padding-top: 12px;
+  padding-bottom: 6px;
+  color: $primary-text-color;
+  }
+}
+
+.store__sub-title {
+  font-weight: 600;
+  color: $primary-text-color;
+  opacity: 0.6;
+
+  @media screen and(min-width: $mobile) {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+  
+}
+
+// ------------------------------------------
 
 .pics__list {
     list-style: none;
