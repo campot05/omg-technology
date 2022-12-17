@@ -1,8 +1,13 @@
 .hero {
-  overflow: hidden;
-  padding-bottom: 100px;
-}
-.container {
+  padding-top: 44px;
+  padding-bottom: 135px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 38px;
+    padding-bottom: 194px;
+  }
+  @media screen and(min-width: $desktop) {
+    padding-top: 64px;
+  }
 }
 
 .hero__wrapper {
@@ -15,7 +20,25 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   color: $primary-text-color;
-  margin-right: 14px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33.33333%;
+  margin-left: 12px;
+  max-width: 60px;
+  @media screen and(min-width: $tablet) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    max-width: 116px;
+    margin-right: 0;
+    margin-left: 49px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    max-width: 211px;
+    margin-left: 65px;
+    margin-right: 0;
+  }
 }
 .hero__img {
 }
@@ -28,6 +51,16 @@
   width: 64px;
   height: 76px;
   margin-left: 8px;
+  @media screen and(min-width: $tablet) {
+    width: 145px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  @media screen and(min-width: $desktop) {
+    width: 166px;
+    height: 166px;
+    margin-left: 110px;
+  }
 }
 .hero__svg {
   display: block;
@@ -36,132 +69,20 @@
 }
 .hero__title {
   position: absolute;
-  bottom: -32px;
+  bottom: -35px;
   left: 50%;
   transform: translate(-50%);
   font-weight: 400;
   font-size: 52px;
   line-height: calc(63 / 52);
   color: $primary-text-color;
+  @media screen and(min-width: $tablet) {
+    font-size: 120px;
+    line-height: calc(146 / 120);
+    bottom: -92px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 160px;
+    line-height: calc(195 / 160);
+  }
 }
-
-// .hero {
-//   position: relative;
-//   text-align: center;
-//   padding-top: 45px;
-//   //   padding-bottom: 100px;
-//   height: 420px;
-//   overflow: hidden;
-
-//   @media screen and(min-width: $tablet) {
-//     padding-top: 38px;
-//     height: 860px;
-//   }
-
-//   @media screen and (min-width: $desktop) {
-//     padding-top: 64px;
-//   }
-// }
-
-// .hero__container {
-//   height: 100%;
-// }
-
-// .hero__wrapper {
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100%;
-
-//   margin: 0 -84px;
-//   gap: 167px;
-//   @media screen and(min-width: $tablet) {
-//     gap: 450;
-//   }
-//   @media screen and(min-width: $desktop) {
-//     gap: 610;
-//   }
-// }
-
-// .hero__text {
-//   font-size: 14px;
-//   line-height: calc(17 / 14);
-//   color: $primary-text-color;
-//   margin-left: 11px;
-//   @media screen and(min-width: $tablet) {
-//     font-size: 24px;
-//     line-height: calc(29 / 24);
-//     margin-left: 45px;
-//   }
-//   @media screen and(min-width: $desktop) {
-//     font-size: 32px;
-//     line-height: calc(39 / 32);
-//     margin-left: 60px;
-//   }
-// }
-
-// .hero__title {
-//   display: block;
-//   width: 100%;
-//   font-weight: 400;
-//   font-size: 52px;
-//   line-height: calc(63 / 52);
-//   color: $primary-text-color;
-//   margin-top: -30px;
-//   @media screen and(min-width: $tablet) {
-//     font-size: 120px;
-//     line-height: calc(146 / 120);
-//     text-align: center;
-//     margin-top: -127px;
-//     color: #000000;
-//   }
-//   @media screen and(min-width: $desktop) {
-//     font-size: 160px;
-//     line-height: calc(195 / 160);
-//     margin-top: -165px;
-//   }
-// }
-// .hero__img {
-//   position: absolute;
-//   top: 44px;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   z-index: -1;
-//   @media screen and(min-width: $tablet) {
-//     width: 390px;
-//     height: 636px;
-//     top: 38px;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     top: 64px;
-//   }
-// }
-
-// .hero__img img {
-// }
-
-// .hero__btn {
-//   padding: 0;
-//   margin: 0;
-//   background-color: transparent;
-//   border: none;
-//   cursor: pointer;
-
-//   width: 64px;
-//   height: 76px;
-//   @media screen and(min-width: $tablet) {
-//     width: 145px;
-//     height: 150px;
-//   }
-//   @media screen and(min-width: $desktop) {
-//     width: 166px;
-//     height: 166px;
-//   }
-// }
-
-// .hero__svg {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-// }
