@@ -1,0 +1,108 @@
+.page-header {
+padding-top: 16px;
+}
+
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__icon {
+    fill: $icon-color;  
+}
+
+@media screen and (max-width: 767.7px) {
+    .logo__icon {
+        width: 45px;
+        height: 35px;
+    }
+
+    .page-header__inner {
+        display: flex;
+        // align-items: flex-end;
+        gap: 14px;
+    }
+
+    .contact__icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .open-mobile-menu-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+    
+    .mobile-menu-button__icon {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: $tablet) {
+    .page-header {
+        padding-top: 24px;
+        }
+
+    .page-header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo__icon {
+        width: 72px;
+        height: 57px;
+    }
+
+    .nav__list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav__item {
+        padding-top: 16px;
+        padding-bottom: 17px;
+        cursor: pointer;
+    }
+
+    .nav__link {
+        color: $primary-text-color;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .contact__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .open-mobile-menu-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .page-header {
+        padding-top: 28px;
+        }
+
+    .nav__list {
+        gap: 48px;
+    }
+
+    .nav__item {
+        padding-top: 12px;
+        padding-bottom: 21px;
+    }
+
+    .contact__icon {
+        width: 28px;
+        height: 28px;
+    }
+}
