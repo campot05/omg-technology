@@ -1,155 +1,158 @@
 svg {
-    display: block;
+  display: block;
 }
 
 a {
-    display: block;
+  display: block;
 }
 
 .header {
-    padding-top: 16px;
+  padding-top: 16px;
 }
 
 .header__wrapper {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .logo__icon {
-    fill: $icon-color;  
+  fill: $icon-color;
 }
 
 @media screen and (max-width: 767.7px) {
-    .logo {
-        width: 45px;
-        height: 35px;
-    }
+  .logo {
+    width: 45px;
+    height: 35px;
+  }
 
-    .logo__icon {
-        width: 45px;
-        height: 35px;
-    }
+  .logo__icon {
+    width: 45px;
+    height: 35px;
+  }
 
-    .header__icons {
-        display: flex;
-        margin-left: auto;
-        // align-items: flex-end;
-        gap: 14px;
-    }
+  .header__icon {
+    display: flex;
+    margin-left: auto;
+    // align-items: flex-end;
+    gap: 14px;
+  }
 
-    .telephone {
-        width: 22px;
-        height: 22px;
-    }
+  .telephone {
+    width: 22px;
+    height: 22px;
+  }
 
-    .telephone__icon {
-        width: 22px;
-        height: 22px;
-    }
+  .telephone__icon {
+    width: 22px;
+    height: 22px;
+  }
 
-    .header__menu {
-        display: none;
-    }
+  .header__menu {
+    display: none;
+  }
 
-    .open-mobile-menu-button {
-        background-color: transparent;
-        border: none;
-        padding: 0;
-    }
-    
-    .mobile-menu-button__icon {
-        display: block;
-    }
+  .open-mobile-menu-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .mobile-menu-button__icon {
+    display: block;
+  }
 }
 
 @media screen and (min-width: $tablet) {
-    .logo {
-        width: 72px;
-        height: 57px;
-    }
+  .logo {
+    width: 72px;
+    height: 57px;
+  }
 
-    .header {
-        padding-top: 24px;
-    }
+  .header {
+    padding-top: 24px;
+  }
 
-    .header__wrapper {
-        display: flex;
-        align-items: center;
-    }
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+  }
 
-    .logo__icon {
-        width: 72px;
-        height: 57px;
-    }
+  .logo__icon {
+    width: 72px;
+    height: 57px;
+  }
 
-    .header__menu-list {
-        display: flex;
-        gap: 24px;
-        margin-left: 80px;
-    }
+  .header__menu {
+    margin-left: 80px;
+  }
 
-    .header__menu-item {
-        padding-top: 16px;
-        padding-bottom: 17px;
-        cursor: pointer;
-    }
+  .header__menu-list {
+    display: flex;
+    gap: 24px;
+  }
 
-    .header__menu-link {
-        color: $primary-text-color;
-        font-size: 20px;
-        line-height: 1.2;
-    }
+  .header__menu-link {
+    color: $primary-text-color;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
 
-    .header__icon {
-        margin-left: auto;
-    }
+  .header__icon {
+    margin-left: auto;
+  }
 
-    .telephone {
-        width: 24px;
-        height: 24px;
-    }
+  .telephone {
+    width: 24px;
+    height: 24px;
+  }
 
-    .telephone__icon {
-        width: 24px;
-        height: 24px;
-    }
+  .telephone__icon {
+    width: 24px;
+    height: 24px;
+  }
 
-    .open-mobile-menu-button {
-        display: none;
-    }
+  .open-mobile-menu-button {
+    display: none;
+  }
 }
 
 @media screen and (min-width: $desktop) {
-    .header {
-        padding-top: 28px;
-    }
+  .header {
+    padding-top: 28px;
+  }
 
-    .header__wrapper {
-        align-items: center;
-    }
+  .header__wrapper {
+    align-items: center;
+  }
 
-    .header__menu-list {
-        margin-left: 261px;
-        gap: 48px;
-    }
+  .header__menu {
+    margin-left: 261px;
+  }
 
-    .header__menu-item {
-        padding-top: 12px;
-        padding-bottom: 21px;
-    }
+  .header__menu-list {
+    gap: 48px;
+  }
 
-    .header__icon {
-        padding-top: 12px;
-        padding-bottom: 21px;
-    }
+  .header__menu-link {
+    padding-top: 12px;
+    padding-bottom: 21px;
+  }
 
-    .telephone {
-        width: 28px;
-        height: 28px;
-    }
+  .header__icon {
+    padding-top: 12px;
+    padding-bottom: 21px;
+  }
 
-    .telephone__icon {
-        width: 28px;
-        height: 28px;
-    }
+  .telephone {
+    // margin-left: 306px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .telephone__icon {
+    width: 28px;
+    height: 28px;
+  }
 }
