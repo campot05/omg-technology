@@ -1,7 +1,3 @@
-.blog {
-  position: absolute;
-  outline: 1px solid orange;
-}
 
 .blog__title {
   @extend %title;
@@ -28,18 +24,18 @@
   }
 
   @media screen and(min-width: $desktop) {
-    margin-bottom: 80px;
+    margin-bottom: 122px;
   }
 }
 
 .blog__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 28px;
   gap: 8px;
 
   position: relative;
-  left: -47px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
@@ -68,7 +64,7 @@
     font-size: 32px;
     line-height: calc(39 / 32);
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 48px;
   }
 }
@@ -81,10 +77,19 @@
   font-size: 18px;
   line-height: calc(24 / 18);
 
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     padding: 20 70;
 
     font-size: 28px;
     line-height: calc(24 / 28);
+  }
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:focus {
+    background-color: $focus-color;
+    outline: transparent;
   }
 }
