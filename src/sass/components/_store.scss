@@ -1,7 +1,13 @@
 .store {
   padding-bottom: 60px;
+  @media screen and(min-width: $mobile) {
+    max-width: 480px;
+    flex-wrap: wrap;
+    display: flex;
+  }
   @media screen and(min-width: $tablet) {
     padding-bottom: 100px;
+    align-items: center;
   }
 }
 
@@ -32,21 +38,25 @@
   list-style: none;
   
   @media screen and(min-width: $mobile) {
-    max-width: 480px;
+    // max-width: 100%;
     width: calc((100% - 32px) / 2);
     gap: 16px;
     // flex-wrap: wrap;
     display: flex;
+    align-items: center;
     
   }
 }
-// .store__item {
-// }
-.store__link {
+.store__item {
+  display: flex;
   width: 136px;
   height: 155px;
-  
 }
+// .store__link {
+//   width: 136px;
+//   height: 155px;
+  
+// }
 .store__wrap {
   position: relative;
   overflow: hidden;
