@@ -101,8 +101,11 @@ padding-top: 16px;
         line-height: 1.2;
     }
 
+    .header__icon {
+        margin-left: auto;
+    }
+
     .telephone {
-        margin-left: 75px;
         width: 24px;
         height: 24px;
     }
@@ -137,7 +140,7 @@ padding-top: 16px;
     }
 
     .telephone {
-        margin-left: 306px;
+        // margin-left: 306px;
         width: 28px;
         height: 28px;
     }
