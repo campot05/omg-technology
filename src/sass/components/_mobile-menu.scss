@@ -41,6 +41,10 @@
         display: block;
     }
 
+    .mobile-menu__nav {
+        padding-bottom: 100px;
+    }
+
     .mobile-menu__list {
         display: inline-flex;
         flex-direction: column;
@@ -56,7 +60,7 @@
 }
 
 @media screen and (min-width: $tablet) {
-    .mobile-menu{
+    .mobile-menu {
         display: none;
     }
 }
