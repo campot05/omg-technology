@@ -1,10 +1,18 @@
-.page-header {
+svg {
+    display: block;
+}
+
+a {
+    display: block;
+}
+
+.header {
 padding-top: 16px;
 }
 
-.page-header__wrapper {
+.header__wrapper {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .logo__icon {
@@ -12,23 +20,34 @@ padding-top: 16px;
 }
 
 @media screen and (max-width: 767.7px) {
+    .logo {
+        width: 45px;
+        height: 35px;
+    }
+
     .logo__icon {
         width: 45px;
         height: 35px;
     }
 
-    .page-header__inner {
+    .header__icons {
         display: flex;
+        margin-left: auto;
         // align-items: flex-end;
         gap: 14px;
     }
 
-    .contact__icon {
+    .telephone {
         width: 22px;
         height: 22px;
     }
 
-    .nav {
+    .telephone__icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .header__menu {
         display: none;
     }
 
@@ -45,13 +64,17 @@ padding-top: 16px;
 }
 
 @media screen and (min-width: $tablet) {
-    .page-header {
+    .logo {
+        width: 72px;
+        height: 57px;
+    }
+
+    .header {
         padding-top: 24px;
         }
 
-    .page-header__wrapper {
+    .header__wrapper {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
@@ -60,24 +83,31 @@ padding-top: 16px;
         height: 57px;
     }
 
-    .nav__list {
+    .header__menu-list {
         display: flex;
         gap: 24px;
+        margin-left: 80px;
     }
 
-    .nav__item {
+    .header__menu-item {
         padding-top: 16px;
         padding-bottom: 17px;
         cursor: pointer;
     }
 
-    .nav__link {
+    .header__menu-link {
         color: $primary-text-color;
         font-size: 20px;
         line-height: 1.2;
     }
 
-    .contact__icon {
+    .telephone {
+        margin-left: 75px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .telephone__icon {
         width: 24px;
         height: 24px;
     }
@@ -88,20 +118,31 @@ padding-top: 16px;
 }
 
 @media screen and (min-width: $desktop) {
-    .page-header {
+    .header {
         padding-top: 28px;
-        }
+    }
 
-    .nav__list {
+    .header__wrapper {
+        align-items: center;
+    }
+
+    .header__menu-list {
+        margin-left: 261px;
         gap: 48px;
     }
 
-    .nav__item {
+    .header__menu-item {
         padding-top: 12px;
         padding-bottom: 21px;
     }
 
-    .contact__icon {
+    .telephone {
+        margin-left: 306px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .telephone__icon {
         width: 28px;
         height: 28px;
     }
