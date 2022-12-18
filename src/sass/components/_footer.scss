@@ -18,8 +18,16 @@
 
         @media screen and(min-width:$tablet) {
             flex-wrap: nowrap;
-            gap: 44px;
+            gap: 0;
         }
+    }
+}
+.footer__logo{
+    display: none;
+    @media  screen and(min-width:$desktop) {
+        display: block;
+        margin-right: 210px;
+        fill: $primary-white-color;
     }
 }
 
@@ -32,9 +40,13 @@
         width: calc((448px - 32px) / 2);
     }
 
-    @media screen and (min-width: $tablet) {}
+    @media screen and (min-width: $tablet) {
+        margin-right:44px ;
+    }
 
-    @media screen and (min-width: $desktop) {}
+    @media screen and (min-width: $desktop) {
+        margin-right: 96px;
+    }
 
     &__title {
         @extend %footer__title;
@@ -58,9 +70,13 @@
         width: calc((448px - 32px) / 2);
     }
 
-    @media screen and (min-width: $tablet) {}
+    @media screen and (min-width: $tablet) {
+        margin-right: 44px;
+    }
 
-    @media screen and (min-width: $desktop) {}
+    @media screen and (min-width: $desktop) {
+        margin-right: 96px;
+    }
 
     &__title {
         @extend %footer__title;
@@ -85,9 +101,13 @@
         width: calc((448px - 32px) / 2);
     }
 
-    @media screen and (min-width: $tablet) {}
+    @media screen and (min-width: $tablet) {
+        margin-right: 64px;
+    }
 
-    @media screen and (min-width: $desktop) {}
+    @media screen and (min-width: $desktop) {
+        margin-right: 208px;
+    }
 
     &__title {
         @extend %footer__title;
@@ -114,7 +134,7 @@
     @extend %footer__text;
     font-style: normal;
     text-align: start;
-    width: calc((100% - 32px) / 2);
+   
 
     @media screen and (min-width: $mobile) {
         width: calc((448px - 32px) / 2);
@@ -138,9 +158,13 @@
 
     @media screen and (min-width: $tablet) {
         width: max-content;
+        margin-right: 16px;
     }
 
-    @media screen and (min-width: $desktop) {}
+    // @media screen and (min-width: $desktop) {
+    //     width: max-content;
+       
+    // }
 
     &__title {
         @extend %footer__title;
@@ -150,6 +174,7 @@
         margin: 0;
 
         @media screen and (min-width: $tablet) {
+            right:40px ;
             transform: rotate(90deg);
         }
     }
@@ -159,8 +184,9 @@
         gap: 10px;
 
         @media screen and (min-width: $tablet) {
-            display: block;
+           flex-direction: column;
             position: relative;
+            gap: 18px;
         }
     }
 
