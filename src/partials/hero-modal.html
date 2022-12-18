@@ -1,0 +1,48 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal ">
+        <form class="modal__form " autocomplete="off" >
+            <h2 class="modal__title">Contact us</h2>
+            <p class="modal__text">
+                If you have any additional questions or you want to clarify something
+                before you make an order please fill in your contact details. We will
+                call you back.
+            </p>
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <label class="modal__label">
+                        Name
+                        <input type="text"
+                         name="name"
+                          class="modal__input"
+                           placeholder="Your name"
+                           required
+                           pattern="[A-Za-z]{4,15}" />
+                    </label>
+                </li>
+                <li class="modal__item">
+                    <label class="modal__label">
+                        Email
+                        <input type="tel" 
+                        name="tel" 
+                        id="tel"
+                         class="modal__input"
+                            placeholder="Your email" 
+                            required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            
+                            />
+                    </label>
+                </li>
+            </ul>
+            <button type="submit" class="modal__button" >Send</button>
+        </form>
+        <button type="button" class="close-button" data-modal-close>
+            <svg class="modal__icon" width="18" height="18">
+                <use href="./images/sprite.svg#modal-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+    
