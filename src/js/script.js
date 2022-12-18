@@ -17,7 +17,7 @@ import 'slick-carousel';
 
 $('.slider').slick({
   //  adaptiveHeight: true,
-  slidesToShow: 3,
+  slidesToShow: 1,
   centerMode: true,
   //  centerPadding: '32px',
   variableWidth: true,

@@ -1,3 +1,8 @@
+.blog {
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
 .blog__title {
   @extend %title;
   display: flex;
@@ -105,21 +110,53 @@ img {
   padding: 0;
   width: 1200px;
   margin: 0 auto;
-
   overflow: hidden;
   button {
     padding: 0;
   }
+  @media screen and(max-width: 1279px) {
+    width: 768px;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  @media screen and(max-width: 767px) {
+    width: 480px;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  @media screen and(max-width: 480px) {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
 }
 
-/* @media screen and(min-width: 768px) {
-  .wrapper {
+.slider {
+  position: relative;
+  padding: 0;
+  width: 1200px;
+  @media screen and(max-width: 1279px) {
     width: 768px;
     padding: 0;
     margin: 0;
     overflow: hidden;
   }
-} */
+  @media screen and(max-width: 767px) {
+    width: 480px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  @media screen and(max-width: 480px) {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+}
 
 /* Слайдер
 .slick-slider {
@@ -180,13 +217,6 @@ img {
 .slick-dots li button {
 }
 
-.slider {
-  position: relative;
-  padding: 0;
-  width: 1200px;
-  outline: 5px solid red;
-}
-
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -200,15 +230,27 @@ img {
 .slider .slick-arrow.slick-prev {
   left: 0;
   background: url('../images/arrow-left.svg') 0 0 / 100% no-repeat;
+  //   @media screen and(max-width: $desktop) {
+  //     background: url('../images/arrow-tab-left.svg') 0 0 / 100% no-repeat;
+  //   }
+  @media screen and(max-width: $mobile) {
+    background: url('../images/arrow-mob-left.svg') 0 0 / 100% no-repeat;
+    width: 41px;
+    height: 27px;
+  }
 }
 .slider .slick-arrow.slick-next {
   right: 0;
   background: url('../images/arrow-right.svg') 0 0 / 100% no-repeat;
-}
+  //   @media screen and(max-width: $desktop) {
+  //     background: url('../images/arrow-tab-right.svg') 0 0 / 100% no-repeat;
+  //   }
 
-.slider__item {
-  text-align: center;
-  /* margin-right: 32px; */
+  @media screen and(max-width: $mobile) {
+    background: url('../images/arrow-mob-right.svg') 0 0 / 100% no-repeat;
+    width: 41px;
+    height: 27px;
+  }
 }
 
 .slider__item img {
