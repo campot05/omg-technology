@@ -13,3 +13,18 @@
   border-radius: 38px;
   cursor: pointer;
 }
+%footer__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: $primary-white-color;
+  margin-bottom: 18px;
+}
+
+%footer__text {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17/14);
+  color: $primary-white-color;
+}
