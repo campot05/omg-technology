@@ -107,6 +107,7 @@
     @media screen and(min-width: 480px) {
       width: 136px;
       height: 155px;
+      
       // justify-content: center;
       // align-items: center;
     }
@@ -140,12 +141,24 @@
   border-radius: 5px;
 }
 
+.store-photo {
+  padding-bottom: 12px;
+}
+
 .store__wrap {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 .store__title-wrap {
+  max-width: 130px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $primary-text-color;
+  font-style: normal;
+  margin: 0 auto;
+
   @media screen and(min-width: $mobile) {
     padding-bottom: 16px;
       // border: 1px solid #eeeeee;
@@ -154,15 +167,20 @@
 }
   }
 .store__pic-title {
-  font-family: 'Montserrat';
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: $primary-text-color;
+  font-style: normal;
+  // margin: 0 auto;
 
   @media screen and(min-width: $mobile) {
-    
+    max-width: 130px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
   padding-top: 12px;
   padding-bottom: 6px;
   color: $primary-text-color;
@@ -174,11 +192,15 @@
   color: $primary-text-color;
   opacity: 0.6;
   font-style: 16px;
+  margin-left: 0 auto;
+  
 
 @media screen and(min-width: 120px) {
   font-size: 12px;
   line-height: 1.25;
-  color: $primary-text-color;}
+  color: $primary-text-color;
+  margin: 0 auto;
+}
 
   @media screen and(min-width: $mobile) {
     font-size: 12px;
