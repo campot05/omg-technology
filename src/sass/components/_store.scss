@@ -1,0 +1,122 @@
+.store {
+  text-align: center;
+  &__info {
+    text-align: start;
+  }
+}
+.store__title {
+  @extend %title;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-left: 14px;
+    background-color: $primary-text-color;
+  }
+
+  @media screen and(min-width: $tablet) {
+    font-size: 44px;
+    line-height: calc(54 / 44);
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 80px;
+  }
+}
+.store__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+
+  @media screen and(min-width: $tablet) {
+    margin-bottom: 60px;
+    gap: 40px 32px;
+  }
+  @media screen and(min-width: $desktop) {
+    gap: 64px 32px;
+  }
+}
+.store__item {
+  width: calc((100% - 16px) / 2);
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 32px) / 2);
+  }
+}
+.store__img {
+  margin-bottom: 12px;
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 16px;
+  }
+}
+.store__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  margin-bottom: 6px;
+
+  @media screen and(min-width:$tablet) {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    margin-bottom: 8px;
+    white-space: nowrap;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-left: 8px;
+      background-color: $primary-text-color;
+    }
+  }
+  @media screen and(min-width:$desktop) {
+    font-size: 36px;
+    line-height: calc((44 / 36));
+    margin-bottom: 4px;
+  }
+}
+.store__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  opacity: 0.6;
+
+  @media screen and(min-width:$tablet) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+  @media screen and(min-width:$desktop) {
+    font-size: 28px;
+    line-height: calc((34 / 28));
+  }
+}
+.store__button {
+  @extend%button;
+  text-align: center;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  padding: 10px 35px;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &:focus {
+    background-color: $focus-color;
+  }
+
+  @media screen and(min-width:$tablet) {
+    font-size: 28px;
+    line-height: calc(28 / 24);
+    padding: 20px 0;
+    width: 280px;
+  }
+}
