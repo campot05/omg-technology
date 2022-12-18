@@ -1,0 +1,53 @@
+<div class="backdrop--is-hidden">
+  <div class="modal">
+    <button type="button" class="close">
+      <svg class="close__icon">
+        <use href="./images/sprite.svg#modal-close"></use>
+      </svg>
+    </button>
+
+    <picture class="subscribe__image">
+      <source
+        srcset="
+          ../src/images/modal/subscribe/sub-desk.jpg   1x,
+          ../src/images/modal/subscribe/sub-desk2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ../src/images/modal/subscribe/sub-tablet.jpg   1x,
+          ../src/images/modal/subscribe/sub-tablet2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../src/images/modal/subscribe/sub-mobile.jpg   1x,
+          ../src/images/modal/subscribe/sub-mobile2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(max-width: 767px)"
+      />
+      <img src="../src/images/modal//subscribe/sub-mobile.jpg" alt="flowers" />
+    </picture>
+
+    <div class="subscribe__wrapper">
+      <strong class="subscribe__strong">Follow to our newsletter</strong>
+      
+      <form class="modal__form">
+        <p class="modal__text">
+          Be the first to get exclusive offers and the latest news on our product
+          directly in your box.
+        </p>
+        <label class="modal__field">Email
+          <input class="modal__input" type="email" name="user-email" placeholder="Your email" />
+        </label>
+        <button type="button" class="modal__subscribe">Subscribe</button>
+      </form>
+
+    </div>
+  </div>
+</div>
