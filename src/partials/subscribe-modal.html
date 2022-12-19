@@ -1,6 +1,6 @@
-<div class="backdrop--is-hidden">
-  <div class="modal">
-    <button type="button" class="close">
+<div class="follow__backdrop is__hidden" modal>
+  <div class="follow__modal">
+    <button type="button" class="follow__close" modal-close>
       <svg class="close__icon">
         <use href="./images/sprite.svg#modal-close"></use>
       </svg>
@@ -36,18 +36,23 @@
 
     <div class="subscribe__wrapper">
       <strong class="subscribe__strong">Follow to our newsletter</strong>
-      
-      <form class="modal__form">
-        <p class="modal__text">
-          Be the first to get exclusive offers and the latest news on our product
-          directly in your box.
-        </p>
-        <label class="modal__field">Email
-          <input class="modal__input" type="email" name="user-email" placeholder="Your email" />
-        </label>
-        <button type="button" class="modal__subscribe">Subscribe</button>
-      </form>
 
+      <form class="follow__modal-form">
+        <p class="follow__modal-text">
+          Be the first to get exclusive offers and the latest news on our
+          product directly in your box.
+        </p>
+        <label class="follow__modal-field"
+          >Email
+          <input
+            class="follow__modal-input"
+            type="email"
+            name="user-email"
+            placeholder="Your email"
+          />
+        </label>
+        <button type="submit" class="follow__modal-subscribe">Subscribe</button>
+      </form>
     </div>
   </div>
 </div>

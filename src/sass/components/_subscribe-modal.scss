@@ -1,4 +1,4 @@
-.backdrop {
+.follow__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,18 +9,18 @@
   background: rgba(0, 0, 0, 0.3);
 
   opacity: 1;
-
+  overflow-y: scroll;
   transition: opacity 250ms var(--timing-function),
     visibility 250ms var(--timing-function);
 
-  &--is-hidden {
+  &.is__hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
   }
 }
 
-.modal {
+.follow__modal {
   position: absolute;
 
   top: 50%;
@@ -38,18 +38,18 @@
     width: 588px;
   }
 
-  @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     width: 860px;
     height: 528px;
   }
 
-  .backdrop--is-hidden & {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
+  //   .backdrop--is-hidden & {
+  //     transform: translate(-50%, -50%) scale(1.2);
+  //   }
 }
 
-.close {
+.follow__close {
   position: absolute;
   display: flex;
   align-items: center;
@@ -111,7 +111,7 @@
   }
 }
 
-.modal__form {
+.follow__modal-form {
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 28px;
@@ -122,7 +122,7 @@
     padding-bottom: 40px;
   }
 
-  @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     padding-left: 48px;
     padding-right: 48px;
     padding-bottom: 0;
@@ -130,7 +130,7 @@
   }
 }
 
-.modal__text {
+.follow__modal-text {
   margin-bottom: 18px;
   text-align: center;
 
@@ -146,7 +146,7 @@
   }
 }
 
-.modal__field {
+.follow__modal-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 18px;
@@ -160,13 +160,13 @@
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 28px;
-    
+
     font-size: 14px;
     line-height: calc(17 / 14);
   }
 }
 
-.modal__input {
+.follow__modal-input {
   margin-top: 8px;
   padding: 10 12;
 
@@ -190,7 +190,7 @@
   }
 }
 
-.modal__subscribe {
+.follow__modal-subscribe {
   @extend %button;
   display: block;
 
