@@ -41,7 +41,7 @@
         </button>
       </div>
 
-      <div class="mobile-menu js-menu-container">
+      <div class="mobile-menu js-menu-container" data-menu>
         <div class="container mobile-menu__container">
           <button type="button" class="mobile-menu__close-button js-close-menu">
             <svg class="mobile-menu__close-icon" width="24" height="24">
@@ -52,19 +52,44 @@
           <nav class="mobile-menu__nav">
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
-                <a href="#hero" class="mobile-menu__link">Anemone</a>
+                <a
+                  href="#hero"
+                  class="mobile-menu__link"
+                  onclick="closeMobileMenu()"
+                  >Anemone</a
+                >
               </li>
               <li class="mobile-menu__item">
-                <a href="#about" class="mobile-menu__link">About us</a>
+                <a
+                  href="#about"
+                  class="mobile-menu__link"
+                  onclick="closeMobileMenu()"
+                  >About us</a
+                >
               </li>
               <li class="mobile-menu__item">
-                <a href="#store" class="mobile-menu__link">Store</a>
+                <a
+                  href="#store"
+                  class="mobile-menu__link"
+                  onclick="closeMobileMenu()"
+                  >Store</a
+                >
               </li>
               <li class="mobile-menu__item">
-                <a href="#delivery" class="mobile-menu__link">Delivery</a>
+                <a
+                  href="#delivery"
+                  class="mobile-menu__link"
+                  onclick="closeMobileMenu()"
+                  >Delivery</a
+                >
               </li>
               <li class="mobile-menu__item">
-                <a href="#blog" class="mobile-menu__link">Blog</a>
+                <a
+                  href="#blog"
+                  class="mobile-menu__link"
+                  onclick="closeMobileMenu()"
+                  >Blog</a
+                >
               </li>
             </ul>
           </nav>
@@ -72,4 +97,12 @@
       </div>
     </div>
   </div>
+  <script>
+    function closeMobileMenu() {
+      const refs = {
+        menu: document.querySelector('[data-menu]'),
+      };
+      refs.menu.classList.remove('is-open');
+    }
+  </script>
 </header>
