@@ -238,6 +238,17 @@ img {
     width: 41px;
     height: 27px;
   }
+  @media screen and(min-width: $mobile) and (max-width: $tablet) {
+    background: url('../images/arrow-mob-left.svg') 0 0 / 100% no-repeat;
+    width: 41px;
+    height: 27px;
+    left: 25;
+  }
+  @media screen and(min-width: $tablet) and (max-width: $desktop) {
+    background: url('../images/arrow-tab-left.svg') 0 0 / 100% no-repeat;
+    width: 97px;
+    height: 64px;
+  }
 }
 .slider .slick-arrow.slick-next {
   right: 0;
@@ -250,6 +261,17 @@ img {
     background: url('../images/arrow-mob-right.svg') 0 0 / 100% no-repeat;
     width: 41px;
     height: 27px;
+  }
+  @media screen and(min-width: $mobile) and (max-width: $tablet) {
+    background: url('../images/arrow-mob-right.svg') 0 0 / 100% no-repeat;
+    width: 41px;
+    height: 27px;
+    right: 25;
+  }
+  @media screen and(min-width: $tablet) and (max-width: $desktop) {
+    background: url('../images/arrow-tab-right.svg') 0 0 / 100% no-repeat;
+    width: 97px;
+    height: 64px;
   }
 }
 
