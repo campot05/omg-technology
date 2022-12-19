@@ -97,6 +97,11 @@ a {
     line-height: 1.2;
     padding-top: 16px;
     padding-bottom: 17px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 
   .header__icon {
