@@ -21,35 +21,36 @@
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   padding: 28px 16px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  width: 272px;
+  background: $primary-white-color;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) perspective(500px) translateY(0%)
+    rotateX(0deg);
   transition: transform 500ms ease;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) perspective(500px) translateY(-100%)
       rotateX(45deg);
   }
 
-  @media screen and(min-width: $mobile) {
-    width: 272px;
-    margin: 0 auto;
-  }
-
   @media screen and(min-width: $tablet) {
     width: 480px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) perspective(500px) translateY(0%)
-      rotateX(0deg);
-    margin: 0;
+
     padding: 48px 32px;
   }
 }
+.modal__form{
 
+  display: none;
+   &.contact__is-hidden{
+  transition: transform 500ms ease;
+  display: block;
+ 
+   }
+}
 .modal__title {
   font-weight: 600;
   font-size: 20px;
@@ -173,5 +174,66 @@
 
   .modal__form:valid & {
     background-color: $accent-color;
+  }
+}
+
+/*****************************/
+.thanks__modal {
+ 
+  padding: 16px 0 4px 0;
+  text-align: center;
+
+  @media screen and(min-width:$tablet) {
+    padding: 6px 0;
+   
+  }
+  &.thanks__is-hidden{
+    display: none;
+      // visibility: hidden;
+      //   opacity: 0;
+      //   pointer-events: none;
+
+  }
+  
+}
+.thanks__img {
+  margin-bottom: 16px;
+}
+.thanks__title {
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  //  text-align: center;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+  }
+}
+.thanks__text {
+  margin-bottom: 18px;
+  color: $modal-text-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  // text-align: center;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 34px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}
+
+.thanks__button {
+  @extend %button__modal;
+  text-align: center;
+  background-color: $accent-color;
+  padding: 10px 0;
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    padding: 14px 0;
   }
 }
