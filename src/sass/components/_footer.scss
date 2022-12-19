@@ -1,194 +1,204 @@
 .footer {
-    padding: 32px 0;
-    background-color: $primary-text-color;
+  padding: 32px 0;
+  background-color: $primary-text-color;
+
+  @media screen and(min-width:$tablet) {
+    padding-top: 60px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    padding-top: 72px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    width: 100%;
 
     @media screen and(min-width:$tablet) {
-        padding-top: 60px;
+      flex-wrap: nowrap;
+      gap: 0;
     }
-
-    @media screen and(min-width:$desktop) {
-        padding-top: 72px;
-    }
-
-    &__content {
-        display: flex;
-        gap: 32px;
-        flex-wrap: wrap;
-        width: 100%;
-
-        @media screen and(min-width:$tablet) {
-            flex-wrap: nowrap;
-            gap: 0;
-        }
-    }
+  }
 }
-.footer__logo{
-    display: none;
-    @media  screen and(min-width:$desktop) {
-        display: block;
-        margin-right: 210px;
-        fill: $primary-white-color;
-    }
+.footer__logo {
+  display: none;
+  @media screen and(min-width:$desktop) {
+    display: block;
+    margin-right: 210px;
+    fill: $primary-white-color;
+  }
 }
 
 .navigation {
-    padding: 0;
-    text-align: start;
-    width: calc((100% - 32px) / 2);
+  padding: 0;
+  text-align: start;
+  width: calc((100% - 32px) / 2);
 
-    @media screen and (min-width: $mobile) {
-        width: calc((448px - 32px) / 2);
-    }
+  @media screen and (min-width: $mobile) {
+    width: calc((448px - 32px) / 2);
+  }
 
-    @media screen and (min-width: $tablet) {
-        margin-right:44px ;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-right: 44px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        margin-right: 96px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-right: 96px;
+  }
 
-    &__title {
-        @extend %footer__title;
-    }
+  &__title {
+    @extend %footer__title;
+  }
 
-    &__item:not(:last-child) {
-        margin-bottom: 12px;
-    }
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
 
-    &__link {
-        @extend %footer__text;
+  &__link {
+    @extend %footer__text;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
     }
+  }
 }
 
 .time {
-    padding: 0;
-    text-align: start;
-    width: calc((100% - 32px) / 2);
+  padding: 0;
+  text-align: start;
+  width: calc((100% - 32px) / 2);
 
-    @media screen and (min-width: $mobile) {
-        width: calc((448px - 32px) / 2);
-    }
+  @media screen and (min-width: $mobile) {
+    width: calc((448px - 32px) / 2);
+  }
 
-    @media screen and (min-width: $tablet) {
-        margin-right: 44px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-right: 44px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        margin-right: 96px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-right: 96px;
+  }
 
-    &__title {
-        @extend %footer__title;
-    }
+  &__title {
+    @extend %footer__title;
+  }
 
-    &__text {
-        @extend %footer__text;
-    }
+  &__text {
+    @extend %footer__text;
+  }
 }
 
 .time__text--br {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .contacts {
-    padding: 0;
-    text-align: start;
-    width: calc((100% - 32px) / 2);
+  padding: 0;
+  text-align: start;
+  width: calc((100% - 32px) / 2);
 
-    @media screen and (min-width: $mobile) {
-        width: calc((448px - 32px) / 2);
-    }
+  @media screen and (min-width: $mobile) {
+    width: calc((448px - 32px) / 2);
+  }
 
-    @media screen and (min-width: $tablet) {
-        margin-right: 64px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-right: 64px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        margin-right: 208px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-right: 208px;
+  }
 
-    &__title {
-        @extend %footer__title;
-    }
+  &__title {
+    @extend %footer__title;
+  }
 
-    &__item {
-        margin-bottom: 12px;
-    }
+  &__item {
+    margin-bottom: 12px;
+  }
 
-    &__link {
-        @extend %footer__text;
+  &__link {
+    @extend %footer__text;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
     }
+  }
 }
 
 .contacts__link--flex-br {
-    display: block;
+  display: block;
 
-    @media screen and (min-width: $tablet) {
-        display: inline;
-    }
+  @media screen and (min-width: $tablet) {
+    display: inline;
+  }
 }
 
 .address {
-    @extend %footer__text;
-    font-style: normal;
-    text-align: start;
-   
+  @extend %footer__text;
+  font-style: normal;
+  text-align: start;
 
-    @media screen and (min-width: $mobile) {
-        width: calc((448px - 32px) / 2);
-    }
+  @media screen and (min-width: $mobile) {
+    width: calc((448px - 32px) / 2);
+  }
 
-    @media screen and (min-width: $tablet) {}
+  @media screen and (min-width: $tablet) {
+  }
 
-    @media screen and (min-width: $desktop) {}
+  @media screen and (min-width: $desktop) {
+  }
 
-    &--br {
-        display: block;
-    }
+  &--br {
+    display: block;
+  }
 }
 
 .media {
-    padding: 0;
-    text-align: start;
-    width: calc((100% - 32px) / 2);
+  padding: 0;
+  text-align: start;
+  width: calc((100% - 32px) / 2);
 
-    @media screen and (min-width: $mobile) {}
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: max-content;
+    margin-right: 16px;
+  }
+
+  // @media screen and (min-width: $desktop) {
+  //     width: max-content;
+
+  // }
+
+  &__title {
+    @extend %footer__title;
+    position: absolute;
+    opacity: 0;
+    color: aliceblue;
+    margin: 0;
 
     @media screen and (min-width: $tablet) {
-        width: max-content;
-        margin-right: 16px;
+      right: 40px;
+      transform: rotate(90deg);
     }
+  }
 
-    // @media screen and (min-width: $desktop) {
-    //     width: max-content;
-       
-    // }
+  &__list {
+    display: flex;
+    gap: 10px;
 
-    &__title {
-        @extend %footer__title;
-        position: absolute;
-        opacity: 0;
-        color: aliceblue;
-        margin: 0;
-
-        @media screen and (min-width: $tablet) {
-            right:40px ;
-            transform: rotate(90deg);
-        }
+    @media screen and (min-width: $tablet) {
+      flex-direction: column;
+      position: relative;
+      gap: 18px;
     }
-
-    &__list {
-        display: flex;
-        gap: 10px;
-
-        @media screen and (min-width: $tablet) {
-           flex-direction: column;
-            position: relative;
-            gap: 18px;
-        }
-    }
-
-   
+  }
 }
