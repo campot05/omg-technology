@@ -1,19 +1,21 @@
 (() => {
   //------- Order modal -------
-  const openModalBtn = document.querySelector('[store-open]');
-  const closeModalBtn = document.querySelector('[shop-close]');
-  const orderModal = document.querySelector('[shop-backdrop]');
-  const openOrderFromHeroBtn = document.querySelector('[shop-open]');
-  const orderForm = document.querySelector('[shop-form]');
+  const openModalBtn = document.querySelector('[data-store-open]');
+  const closeModalBtn = document.querySelector('[data-shop-close]');
+  const orderModal = document.querySelector('[data-shop-backdrop]');
+  const openOrderFromHeroBtn = document.querySelector('[data-shop-open]');
+  const orderForm = document.querySelector('[data-shop-form]');
 
   openModalBtn.addEventListener('click', () => toggleIsHidden(orderModal));
   closeModalBtn.addEventListener('click', () => toggleIsHidden(orderModal));
   openOrderFromHeroBtn.addEventListener('click', () =>
     toggleIsHidden(orderModal)
   );
-  const modalThanks = document.querySelector('[thanks-modal]');
-  const closeThanksModalBtn = document.querySelector('[thank-close]');
-  const continueThanksModalBtn = document.querySelector('[thank-continue]');
+  const modalThanks = document.querySelector('[data-thanks-modal]');
+  const closeThanksModalBtn = document.querySelector('[data-thank-close]');
+  const continueThanksModalBtn = document.querySelector(
+    '[data-thank-continue]'
+  );
 
   closeThanksModalBtn.addEventListener('click', () =>
     toggleIsHidden(modalThanks)
